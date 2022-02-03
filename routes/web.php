@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductComtroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,7 +31,12 @@ Route::get('/home', function () {
 Route::get('/product', function () {
     return view('employeeProducts');
 });
-
+Route::get('/addProducts', function () {
+    return view('employeeAddProducts');
+});
+Route::get('/updateProducts', function () {
+    return view('employeeUpdateProducts');
+});
 
 // Admin
 Route::get('/admin', function () {
@@ -45,10 +51,22 @@ Route::get('/admin/userManagement', function () {
 Route::get('/admin/userManagement/addUser', function () {
     return view('adminAddUser');
 });
+Route::get('/admin/userManagement/editUser', function () {
+    return view('adminEditUser');
+});
 Route::get('/admin/product', function () {
     return view('adminProducts');
 });
+Route::get('/admin/addProducts', function () {
+    return view('adminAddProducts');
+});
+Route::get('/admin/updateProducts', function () {
+    return view('adminUpdateProducts');
+});
 
+
+//-----------------------------------------------------
+Route::resource('products', ProductComtroller::class);
 
 
 // Login

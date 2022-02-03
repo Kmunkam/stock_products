@@ -6,7 +6,7 @@
 
 <div class="container">
     <div class="col-md-6 mt-5 ms-3">
-        <h4 class="my-3 mb-5">Add new employee</h4>
+        <h4 class="my-3 mb-5">Update data employee</h4>
         <div class="mb-3">
             <label for="idEmployee" class="form-label">ID Employee</label>
             <input type="number" class="form-control" id="idEmployee">
@@ -31,7 +31,7 @@
                 <option value="2">Employee</option>
             </select>
         </div>
-        <div class="mt-3">
+        <div class="mt-5">
             <a href="" class="btn btn-success">save</a>
         </div>
     </div>

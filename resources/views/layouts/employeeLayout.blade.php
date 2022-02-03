@@ -31,22 +31,9 @@
 
 
             {{-- nav --}}
-            <div class="row g-3 mt-3 ">
+            {{-- <div class="row g-3 mt-3 ">
                 <div class="col-sm-3">
-                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-                <div class="col-sm-3">
-                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
+                    <a href="{{ url('/AddProducts') }}" type="button" class="btn btn-success btn-sm">เพิ่มสินค้า</a>
                 </div>
                 <div class="col-sm input-group input-group-sm mb-3">
                     <form class="d-flex ms-auto input-group-sm">
@@ -54,7 +41,7 @@
                         <button class="btn btn-outline-secondary rounded-end rounded-0" type="button" id="button-search">Button</button>
                     </form>
                 </div>
-            </div>
+            </div> --}}
 
 
 
